@@ -57,8 +57,8 @@ end
 git "#{node['dynamic-dynamodb']['base_path']}/dynamic-dynamodb" do
     repository "git://github.com/sagarruchandani/dynamo-node-opsworks-cookbook.git"
     reference "master"
-    set :username, "sagarruchandani"
-    set :passphrase, "s1a2g3a4r5"
+    set :username, "git_username"
+    set :passphrase, "git_password"
     user node['dynamic-dynamodb']['user']
     group node['dynamic-dynamodb']['group']
     action :sync
